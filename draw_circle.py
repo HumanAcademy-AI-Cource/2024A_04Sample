@@ -24,3 +24,8 @@ cv2.circle(image, center=center, radius=radius, color=color, thickness=thickness
 # 円が追加された画像を保存する
 cv2.imwrite("circle_banana.jpg", image)
 print("画像を加工して保存しました。")
+
+# 画像を表示
+cv2.imshow("Banana", image)
+cv2.waitKey(0)
+cv2.destroyAllWindows()
