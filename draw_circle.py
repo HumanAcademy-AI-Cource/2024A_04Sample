@@ -19,7 +19,7 @@ thickness = 10
 color = (0, 0, 0)
 
 # cv2.circleという関数を使って、画像の中に円を描画する
-cv2.circle(image, center=center, radius=radius, color=color, thickness=thickness, lineType=cv2.LINE_AA)
+cv2.circle(image, center, radius, color, thickness, cv2.LINE_AA)
 
 # 円が追加された画像を保存する
 cv2.imwrite("circle_banana.jpg", image)
